@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Прокат кораблей</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚤 Аренда кораблей</h1>
+            <div id="auth-panel"></div>
+        </header>
+
+        <div id="boats-list" class="boats-grid"></div>
+
+        <div id="my-rentals" style="display: none;">
+            <h2>Мои аренды</h2>
+            <div id="rentals-list"></div>
+        </div>
+
+        <div id="admin-panel" style="display: none;">
+            <h2>Админ-панель</h2>
+            <button id="show-users">Список пользователей</button>
+            <div id="users-list"></div>
+            <hr>
+            <h3>Добавить корабль</h3>
+            <input type="text" id="boat-name" placeholder="Название">
+            <input type="text" id="boat-type" placeholder="Тип">
+            <input type="number" id="boat-price" placeholder="Цена за час">
+            <button id="add-boat">Добавить</button>
+            <div id="admin-boats-list"></div>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>

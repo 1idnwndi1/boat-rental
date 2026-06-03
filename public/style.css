@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    font-family: system-ui, sans-serif;
+}
+body {
+    background: #eef2f5;
+    padding: 20px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 12px 24px;
+    border-radius: 40px;
+    margin-bottom: 30px;
+}
+.boats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+.boat-card {
+    background: white;
+    border-radius: 24px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.boat-card button {
+    background: #2c7da0;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-top: 12px;
+    width: 100%;
+}
+button {
+    background: #2c7da0;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+}
+#auth-panel {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+input {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 40px;
+    border: 1px solid #ccc;
+}
